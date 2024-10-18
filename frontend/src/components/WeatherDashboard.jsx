@@ -15,10 +15,10 @@ const WeatherDashboard = () => {
       setLoading(false);
     };
     
-    fetchData(); // Initial fetch
-    const interval = setInterval(fetchData, 300000); // 5 minutes in milliseconds
+    fetchData(); 
+    const interval = setInterval(fetchData, 300000);
 
-    return () => clearInterval(interval); // Cleanup
+    return () => clearInterval(interval); 
   }, []);
 
   if (loading) {

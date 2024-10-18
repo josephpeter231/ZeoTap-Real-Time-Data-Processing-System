@@ -2,6 +2,8 @@
 
 This project is a Weather Monitoring Dashboard built with React, Chart.js, and Axios. It fetches weather data and displays it using bar and pie charts, providing insights into temperature alerts across various cities in India and gives real-time data processing system to monitor weather conditions and provide summarized insights using rollups and aggregates.
 
+## Screen Recording
+[Watch Demo](Screenrecording/)
 
 ## Features
 
@@ -37,5 +39,8 @@ To set up this project locally, follow these steps:
        - `nodemon server` or `node server`
 
 3. **Open your Browser Navigate to**
-   - [localhost](http://localhost:5173/)
-  
+   - [localhost link](http://localhost:5173/)
+   - make sure you run backend to get the datas from backend.
+
+## Application Features
+1. **Homepage** Displays current weather conditions and forecasts for various cities.

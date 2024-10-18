@@ -1,8 +1,7 @@
-let dailySummaries = []; // This should be replaced with persistent storage (like a database)
+let dailySummaries = [];
 
-// Function to roll up daily summaries
 export const rollUpDailySummary = (newData) => {
-  const today = new Date().toISOString().split('T')[0]; // Get today's date
+  const today = new Date().toISOString().split('T')[0];
   const existingSummary = dailySummaries.find(summary => summary.date === today);
 
   if (existingSummary) {
@@ -15,7 +14,7 @@ export const rollUpDailySummary = (newData) => {
       avgTemp: newData.tempCelsius,
       maxTemp: newData.tempCelsius,
       minTemp: newData.tempCelsius,
-      dominantCondition: newData.main, // Simplified logic for demo
+      dominantCondition: newData.main,
     });
   }
 };

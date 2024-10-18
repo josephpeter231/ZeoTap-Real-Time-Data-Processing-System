@@ -1,14 +1,14 @@
-let alerts = []; // This should be replaced with persistent storage (like a database)
+let alerts = []; 
 let lastTemperature = null;
 
 export const checkAlerts = () => {
-  return alerts; // Fetch alerts logic goes here
+  return alerts; 
 };
 
 export const checkThresholds = (temperature) => {
-  const threshold = 35; // Example threshold for temperature
+  const threshold = 35; 
   if (lastTemperature !== null && temperature > threshold && lastTemperature > threshold) {
     alerts.push(`Alert: Temperature exceeded ${threshold}°C for consecutive updates.`);
   }
-  lastTemperature = temperature; // Update the last temperature
+  lastTemperature = temperature; 
 };
