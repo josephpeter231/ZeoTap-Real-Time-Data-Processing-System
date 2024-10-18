@@ -22,6 +22,7 @@ const WeatherSummary = () => {
   useEffect(() => {
     const fetchWeatherData = async () => {
       setLoading(true);
+      
       const today = new Date().toISOString().split('T')[0];
       const fiveDaysAgo = new Date();
       fiveDaysAgo.setDate(fiveDaysAgo.getDate() - 5);
@@ -68,6 +69,7 @@ const WeatherSummary = () => {
         setLoading(false);
       } catch (error) {
         console.error('Error fetching weather data:', error);
+        console.log(threshold)
         setLoading(false);
       }
     };

@@ -21,8 +21,8 @@ mongoose.connect('mongodb+srv://josephpeterjece2021:AJ9Hg6xTtQBUCoGr@cluster1.xa
 const alertSchema = new mongoose.Schema({
   city: String,
   date: String,
-  threshold: Number,
-  
+  threshold: Number, 
+   
 }, { timestamps: true }); 
 const Alert = mongoose.model('Alert', alertSchema);
 
@@ -38,12 +38,12 @@ app.post('/api/alerts', async (req, res) => {
     res.status(500).json({ success: false, message: 'Error saving alert' });
   }
 });
-
+ 
 // Fetch all alerts
 app.get('/api/alerts', async (req, res) => {
   try {
     const alerts = await Alert.find();
-    res.status(200).json(alerts);
+    res.status(200).json(alerts); 
 
   } catch (error) {
     console.error('Error fetching alerts:', error);

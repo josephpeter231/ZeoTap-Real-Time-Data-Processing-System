@@ -42,5 +42,8 @@ To set up this project locally, follow these steps:
    - [localhost link](http://localhost:5173/)
    - make sure you run backend to get the datas from backend.
 
-## Application Features
-1. **Homepage** Displays current weather conditions and forecasts for various cities.
+## API
+1. **Homepage:** Displays current weather conditions and forecasts for various cities.
+2. **DailySummary:**`/daily-summary` Provides a summary of daily weather conditions over a specified period.
+3. **Alerts:**`/alerts`  Shows weather alerts for cities based on temperature thresholds conditions.
+4. **Visualisation:**`/charts`  Features visual tools for analyzing weather data trends through charts and graphs.
