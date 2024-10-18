@@ -22,5 +22,11 @@ This project is a Weather Monitoring Dashboard built with React, Chart.js, and A
 To set up this project locally, follow these steps:
 
 1. **Clone the repository:**
-   git clone https://github.com/your-username/weather-monitoring-dashboard.git
+   `git clone https://github.com/josephpeter231/ZeoTap-Real-Time-Data-Processing-System`
+2. **Open two Terminals (or) split the Terminal:**
+   - There are two folders `frontend` and `backend`
+   - So to run locally need to run in seperate Terminals.
+     - run the following commands for frontend
+       - `cd frontend`  
+     - npm
   
