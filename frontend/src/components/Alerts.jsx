@@ -14,7 +14,9 @@ const Alerts = () => {
     const fetchAlerts = async () => {
       try {
         const response = await axios.get('http://localhost:5000/api/alerts');
-        setAlerts(response.data);
+        // Sort alerts by createdAt date in descending order
+        const sortedAlerts = response.data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+        setAlerts(sortedAlerts);
         setLoading(false);
       } catch (err) {
         console.error('Error fetching alerts:', err);

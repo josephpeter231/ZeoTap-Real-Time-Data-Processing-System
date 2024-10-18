@@ -1,8 +1,26 @@
-# React + Vite
+# Weather Monitoring Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a Weather Monitoring Dashboard built with React, Chart.js, and Axios. It fetches weather data and displays it using bar and pie charts, providing insights into temperature alerts across various cities in India and gives real-time data processing system to monitor weather conditions and provide summarized insights using rollups and aggregates.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Displays maximum temperatures over the last 5 days for selected cities.
+- Create alert based on user threshold limit.
+- Shows temperature alerts triggered for each city in a pie chart.
+- Responsive and user-friendly interface.
+
+## Technologies
+
+- Vite Js (React)
+- Chart.js
+- Axios
+- CSS,Bootstrap
+
+## Installation
+
+To set up this project locally, follow these steps:
+
+1. **Clone the repository:**
+   git clone https://github.com/your-username/weather-monitoring-dashboard.git
+  
