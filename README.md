@@ -26,7 +26,16 @@ To set up this project locally, follow these steps:
 2. **Open two Terminals (or) split the Terminal:**
    - There are two folders `frontend` and `backend`
    - So to run locally need to run in seperate Terminals.
-     - run the following commands for frontend
+     - Run the following commands for frontend
        - `cd frontend`  
-     - npm
+       - `npm install`
+       - `npm run dev`
+
+     - Run the following commands to activate backend
+       - `cd backend`
+       - `npm install`
+       - `nodemon server` or `node server`
+
+3. **Open your Browser Navigate to**
+   - [localhost](http://localhost:5173/)
   

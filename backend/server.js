@@ -5,11 +5,10 @@ const cors = require('cors');
 
 const app = express();
 
-// Middleware
 app.use(bodyParser.json());
 app.use(cors());
 
-// MongoDB connection
+
 mongoose.connect('mongodb+srv://josephpeterjece2021:AJ9Hg6xTtQBUCoGr@cluster1.xaacunv.mongodb.net/Zeotap?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -19,21 +18,16 @@ mongoose.connect('mongodb+srv://josephpeterjece2021:AJ9Hg6xTtQBUCoGr@cluster1.xa
   console.error('MongoDB connection error:', err);
 });
 
-// Define Alert Schema
 const alertSchema = new mongoose.Schema({
   city: String,
   date: String,
   threshold: Number,
   
-}, { timestamps: true }); // Adding timestamps for createdAt and updatedAt
-
-// Alert model
+}, { timestamps: true }); 
 const Alert = mongoose.model('Alert', alertSchema);
 
-// Store new alert in the database
 app.post('/api/alerts', async (req, res) => {
   const { city, date, threshold} = req.body;
-  console.log(req.body)
   
   try {
     const newAlert = new Alert({ city, date, threshold });
