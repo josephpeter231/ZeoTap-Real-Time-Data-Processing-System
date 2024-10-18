@@ -1,0 +1,26 @@
+/* Alerts.css */
+
+.card-high {
+    background-color: #f8d7da; /* Light red for high temperature alerts */
+    color: #721c24;
+  }
+  
+  .card-medium {
+    background-color: #fff3cd; /* Light yellow for medium temperature alerts */
+    color: #856404;
+  }
+  
+  .card-low {
+    background-color: #d4edda; /* Light green for low temperature alerts */
+    color: #155724;
+  }
+  
+  .card {
+    border-radius: 10px; /* Adding some border radius for better aesthetics */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.02); /* Scale up slightly on hover */
+  }
+  
