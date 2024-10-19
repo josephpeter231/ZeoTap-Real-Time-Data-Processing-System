@@ -18,6 +18,7 @@ This project is a Weather Monitoring Dashboard built with React, Chart.js, and A
 - Chart.js
 - Axios
 - CSS,Bootstrap
+- Mongo DB (for datastorage)
 
 ## Installation
 
@@ -47,3 +48,5 @@ To set up this project locally, follow these steps:
 2. **DailySummary:**`/daily-summary` Provides a summary of daily weather conditions over a specified period.
 3. **Alerts:**`/alerts`  Shows weather alerts for cities based on temperature thresholds conditions.
 4. **Visualisation:**`/charts`  Features visual tools for analyzing weather data trends through charts and graphs.
+
+
